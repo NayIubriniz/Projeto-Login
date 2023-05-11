@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/mq.css">
+    <script src="https://kit.fontawesome.com/f8b06bd311.js" crossorigin="anonymous"></script>
     <title>Formulário</title>
 </head>
 <body>
@@ -16,7 +17,23 @@
             </div>
             <div id="form">
                 <h1>Área Login</h1>
-                <form action="login" method="post"></form>
+                <p>Bem vindo de volta</p>
+                <form action="login" method="post" autocomplete="on">
+                    <div class="campo">
+                        <i class="fa-solid fa-user"></i></label>
+                        <input type="email" name="login" id="ilogin" placeholder="Your best email" autocomplete="email" required maxlength="30"> 
+                        <label for="login">Log</label>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-lock"></i></label>
+                        <input type="password" name="pass" id="ipass" placeholder="sua senha" autocomplete="current-password" required minlength="8" maxlength="10">
+                        <label for="login">Pass</label>
+                    </div>
+                    <input type="submit" value="to send">
+                    <a href="esqueci.html">
+                        forgot the password
+                    </a>
+                </form>
             </div>
         </section>
     </main>
