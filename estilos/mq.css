@@ -2,7 +2,7 @@
 
 
  
-
+/*Config Tablet*/
 @media screen and (min-width:768px) and (max-width:1024px) {
     body{
         background-image: linear-gradient(to top, #07344e,
@@ -10,6 +10,7 @@
     }
     section#login{
         width: 80vw;
+        height: 400px;
     }
     section#login > div#img{
         float: left;
@@ -22,6 +23,7 @@
         
     }
  }
+ /*Config Desktop +*/
 @media screen and (min-width:1024px) {
     body{
         background-image: linear-gradient(to top, #07344e,
@@ -29,6 +31,7 @@
     }
     section#login{
         width: 1020px;
+        height: 350px;
     }
     section#login > div#img{
         float: right;
@@ -41,5 +44,6 @@
     }
     div#form > h1{
         font-size: 2em;
+        margin: 10px 20px;
     }
 }
